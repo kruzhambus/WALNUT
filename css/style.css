@@ -135,8 +135,29 @@ a {
   margin-right: 5px;
 }
 
-.info-top_log .info-top_login a:hover {
-  border-bottom: 2px solid #93B474;
+.info-top_log .info-top_login a::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 2px;
+  left: 0;
+  background-color: #93b474;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.info-top_log .info-top_login a:hover::after {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .info-top_log .info-top_register {
@@ -155,8 +176,29 @@ a {
   transition: all 0.3s;
 }
 
-.info-top_log .info-top_register a:hover {
-  border-bottom: 2px solid #93B474;
+.info-top_log .info-top_register a::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 2px;
+  left: 0;
+  background-color: #93b474;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.info-top_log .info-top_register a:hover::after {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .info-top_log .info-top_language select {
@@ -4017,6 +4059,39 @@ a {
 
 ._no-webp .main-thanks .title-container {
   background: url(../img/bg.png) center no-repeat; }
+
+.info-top_items {
+  padding: 12px 10px;
+}
+
+.footer .footer-bottom {
+  padding: 30px 10px;
+}
+
+.footer .footer_items {
+  padding: 10px;
+}
+
+.navbar-list a {
+  width: 100%;
+}
+
+.news .news-swiper_info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-producer .producer .producer_left {
+  padding-left: 10px;
+}
+
+.main-wholesale .wholesale-title .container h1 {
+  padding-left: 10px;
+}
+
+.main-info_title img {
+  margin-left: 10px;
+}
 
 @media (max-width: 1300px) {
   .main-news1 .slider-container {
